@@ -1,0 +1,47 @@
+.background{
+    background-size: cover;
+    background-color: #020E24;
+    min-height: 100vh;
+}
+
+.topbarWrapper{
+    background-color: #082D70;
+    -webkit-box-shadow: 1px 1px 18px 10px rgba(0,0,0,0.76); 
+    box-shadow: 1px 1px 18px 10px rgba(0,0,0,0.76);
+    position: relative;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.contactUs{
+    color: white;
+    cursor: pointer;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(107, 17, 203, 0.404), rgb(37, 252, 55));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(74, 12, 141), rgb(37, 76, 252))
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
