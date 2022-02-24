@@ -1,21 +1,18 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { shallow } from 'enzyme';
+import Home from '../src/components/pages/home/Home';
 
 describe('renders without crashing', function () {
-  let mountedQuote;
+  let mountedLogin;
 
   beforeEach(()=>{
-      mountedQuote = shallow(<Home />);
+      mountedLogin = shallow(<Home />);
   })
   
   it('renders without crashing', function() {
-      const mountedQuote = shallow(<Home />);
-      expect(mountedQuote.length).toBeGreaterThan(0);
-  });
-
-  it('renders a string', () => {
-      const quote = mountedQuote.find('h2');
-      expect(quote.length).toBeGreaterThan(0);
+      const mountedLogin = shallow(<Home />);
+      expect(mountedLogin.length).toBeGreaterThan(0);
   });
   
 });
