@@ -4,17 +4,19 @@ pipeline{
     stages {
         stage('Build'){
             steps {
-                bat 'npm install -g npm'
+                echo 'Building the application'
             }
         }
         stage('Test'){
             steps {
-                bat 'npm test --watchAll-false'
+                echo 'testing the application...'
+                
             }
         }
         stage('Deploy'){
             steps {
-                bat 'npm start'
+                
+                echo 'deploying the application'
             }
         }
     }
